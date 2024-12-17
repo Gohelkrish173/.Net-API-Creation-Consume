@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Consume_DemoAPI_FrontEnd.props" />
+</Project>

@@ -105,5 +105,30 @@ namespace DemoWebAPI.Data
             }
         }
         #endregion
+
+        #region GetCountryByPK
+        public CountryModel GetCountryByPK(int CountryID)
+        {
+            CountryModel countryModel = new CountryModel();
+            using (SqlConnection conn = new SqlConnection(this.configuration.GetConnectionString("myConnection")))
+            {
+                SqlCommand cmd = new SqlCommand("PR_LOC_Country_SelectByPK", conn)
+                {
+                    CommandType = CommandType.StoredProcedure,
+                };
+                conn.Open();
+                cmd.Parameters.AddWithValue("CountryID", CountryID);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    countryModel.CountryID = Convert.ToInt32(reader["CountryID"]);
+                    countryModel.CountryName = reader["CountryName"].ToString();
+                    countryModel.CountryCode = reader["CountryCode"].ToString();
+                }
+            }
+            return countryModel;
+        }
+        #endregion
     }
 }

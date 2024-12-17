@@ -107,5 +107,31 @@ namespace DemoWebAPI.Data
             }
         }
         #endregion
+
+        #region GetStateByPK
+        public StateModel GetStateByPK(int StateID)
+        {
+            StateModel smodel = new StateModel();
+            using (SqlConnection conn = new SqlConnection(this._configuration.GetConnectionString("myConnection")))
+            {
+                SqlCommand cmd = new SqlCommand("PR_LOC_State_SelectPK", conn)
+                {
+                    CommandType = CommandType.StoredProcedure,
+                };
+                conn.Open();
+                cmd.Parameters.AddWithValue("StateID", StateID);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    smodel.StateID = Convert.ToInt32(reader["StateID"]);
+                    smodel.CountryID = Convert.ToInt32(reader["CountryID"]);
+                    smodel.StateName = reader["StateName"].ToString();
+                    smodel.StateCode = reader["StateCode"].ToString();
+                }
+            }
+            return smodel;
+        }
+        #endregion
     }
 }

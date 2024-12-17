@@ -1,0 +1,62 @@
+﻿@using System.Data;
+@model IEnumerable<Consume_DemoAPI_FrontEnd.Models.CityModel>;
+
+<div class="d-flex justify-content-end align-items-center">
+    <a class="btn btn-outline-primary" asp-controller="City" asp-action="CityAddEdit">
+        <i class="bi bi-plus-lg"></i>&nbsp;Add City
+    </a>
+</div>
+
+@if (TempData["CityInsertMsg"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["CityInsertMsg"]
+    </div>
+}
+
+
+<div class="mb-3">
+    <input type="text" class="form-control" id="citySearch" placeholder="Search Any">
+</div>
+
+<table class="table table-hover table-header-fixed">
+    <thead>
+        <tr>
+            <th scope="col">City Name</th>
+            <th scope="col">State ID</th>
+            <th scope="col">Country ID</th>
+            <th class="text-center">Actions</th>
+        </tr>
+    </thead>
+    <tbody id="cityTable">
+        @foreach (var row in Model)
+        {
+            <tr>
+                <td>@row.CityName</td>
+                <td>@row.StateID</td>
+                <td>@row.CountryID</td>
+                <td class="text-center">
+                    <a class="btn btn-outline-success btn-xs" asp-controller="City" asp-action="CityAddEdit" asp-route-CityID="@row.CityID.ToString()">
+                        <i class="bi bi-pencil-fill">Edit</i>
+                    </a>
+                    <a class="btn btn-outline-danger btn-xs" asp-controller="City" asp-action="CityDelete" asp-route-CityID="@row.CityID" onclick="return confirm('Are you sure you want to delete this city?');">
+                        <i class="bi bi-x">Delete</i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $("#citySearch").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#cityTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+                });
+            });
+        });
+    </script>
+}

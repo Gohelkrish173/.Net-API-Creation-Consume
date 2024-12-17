@@ -1,0 +1,62 @@
+﻿@using System.Data;
+@using Consume_DemoAPI_FrontEnd;
+@model IEnumerable<Consume_DemoAPI_FrontEnd.Models.CountryModel>
+
+
+<div class="d-flex justify-content-end align-items-center">
+    <a class="btn btn-outline-primary" asp-controller="Country" asp-action="CountryAddEdit">
+        <i class="bi bi-plus-lg"></i>&nbsp;Add Country
+    </a>
+</div>
+
+@if (TempData["CountryInsertMsg"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["CountryInsertMsg"]
+    </div>
+}
+
+
+<div class="mb-3">
+    <input type="text" class="form-control" id="countrySearch" placeholder="Search Any">
+</div>
+
+<table class="table table-hover table-header-fixed">
+    <thead>
+        <tr>
+            <th scope="col">Country Name</th>
+            <th scope="col">CountryCode</th>
+            <th class="text-center">Actions</th>
+        </tr>
+    </thead>
+    <tbody id="countryTable">
+        @foreach (var row in Model)
+        {
+            <tr>
+                <td>@row.CountryName</td>
+                <td>@row.CountryCode</td>
+                <td class="text-center">
+                    <a class="btn btn-outline-success btn-xs" asp-controller="Country" asp-action="CountryAddEdit" asp-route-CountryID="@row.CountryID">
+                        <i class="bi bi-pencil-fill">Edit</i>
+                    </a>
+                    <a class="btn btn-outline-danger btn-xs" asp-controller="Country" asp-action="CountryDelete" asp-route-CountryID="@row.CountryID" onclick="return confirm('Are you sure you want to delete this Country?');">
+                        <i class="bi bi-x">Delete</i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $("#countrySearch").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#countryTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+                });
+            });
+        });
+    </script>
+}
