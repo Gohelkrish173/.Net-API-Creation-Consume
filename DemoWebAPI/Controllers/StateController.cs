@@ -44,12 +44,21 @@ namespace DemoWebAPI.Controllers
         }
         #endregion
 
-        #region DeleteCountry
-        [HttpDelete]
+        #region DeleteState
+        [HttpDelete("{StateID:int}")]
         public IActionResult DeleteState(int StateID)
         {
             bool Reflected = _stateRepository.DeleteState(StateID);
             return Ok(Reflected);
+        }
+        #endregion
+
+        #region GetStateByPK
+        [HttpGet("{StateID:int}")]
+        public IActionResult GetStateByPK(int StateID)
+        {
+            StateModel smodel = _stateRepository.GetStateByPK(StateID);
+            return Ok(smodel);
         }
         #endregion
     }

@@ -112,5 +112,32 @@ namespace DemoWebAPI.Data
             }
         }
         #endregion
+
+        #region GetCityByPK
+        public CityModel GetCityByPK(int CityID)
+        {
+            CityModel cmodel = new CityModel();
+            using (SqlConnection conn = new SqlConnection(this.configuration.GetConnectionString("myConnection")))
+            {
+                SqlCommand cmd = new SqlCommand("PR_LOC_City_SelectByPK", conn)
+                {
+                    CommandType = CommandType.StoredProcedure,
+                };
+                conn.Open();
+
+                cmd.Parameters.AddWithValue("CityID", CityID);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    cmodel.CityID = Convert.ToInt32(reader["CityID"]);
+                    cmodel.CountryID = Convert.ToInt32(reader["CountryID"]);
+                    cmodel.StateID = Convert.ToInt32(reader["StateID"]);
+                    cmodel.CityName = reader["CityName"].ToString();
+                    cmodel.CityCode = reader["CityCode"].ToString();
+                }
+            }
+            return cmodel;
+        }
+        #endregion
     }
 }

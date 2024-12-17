@@ -15,8 +15,8 @@ namespace DemoWebAPI.Controllers
     {
         private readonly CityRepository _cityRepository;
 
-        public CityController(CityRepository cityRepository) 
-        { 
+        public CityController(CityRepository cityRepository)
+        {
             _cityRepository = cityRepository;
         }
 
@@ -49,12 +49,22 @@ namespace DemoWebAPI.Controllers
         #endregion
 
         #region DeleteCity
-        [HttpDelete]
+        [HttpDelete("{CityID:int}")]
         public IActionResult DeleteCity(int CityID)
         {
             bool Reflected = _cityRepository.DeleteCity(CityID);
             return Ok(Reflected);
         }
         #endregion
+
+        #region GetCityByPK
+        [HttpGet("{CityID:int}")]
+        public IActionResult GetCityByPK(int CityID)
+        {
+            CityModel cmodel = _cityRepository.GetCityByPK(CityID);
+            return Ok(cmodel);
+        }
+        #endregion
+
     }
 }

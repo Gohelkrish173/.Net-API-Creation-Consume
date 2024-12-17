@@ -24,7 +24,7 @@ namespace DemoWebAPI.Controllers
         }
         #endregion
 
-        #region InsertCity
+        #region InsertCountry
         [HttpPost]
         public IActionResult InsertCountry(CountryModel cmodel)
         {
@@ -33,7 +33,7 @@ namespace DemoWebAPI.Controllers
         }
         #endregion
 
-        #region UpdateCity
+        #region UpdateCountry
         [HttpPut]
         public IActionResult UpdateCountry(CountryModel countryModel)
         {
@@ -43,11 +43,20 @@ namespace DemoWebAPI.Controllers
         #endregion
 
         #region DeleteCountry
-        [HttpDelete]
+        [HttpDelete("{CountryID:int}")]
         public IActionResult DeleteCountry(int CountryID)
         {
             bool Reflected = _countryRepository.DeleteCountry(CountryID);
             return Ok(Reflected);
+        }
+        #endregion
+
+        #region GetCountryByPK
+        [HttpGet("{CountryID:int}")]
+        public IActionResult GetCountryByPK(int CountryID)
+        {
+            CountryModel cmodel = _countryRepository.GetCountryByPK(CountryID);
+            return Ok(cmodel);
         }
         #endregion
     }

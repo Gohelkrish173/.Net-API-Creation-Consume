@@ -44,7 +44,7 @@
   {
     "ContainingType": "DemoWebAPI.Controllers.CityController",
     "Method": "DeleteCity",
-    "RelativePath": "api/City",
+    "RelativePath": "api/City/{CityID}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -52,7 +52,23 @@
       {
         "Name": "CityID",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoWebAPI.Controllers.CityController",
+    "Method": "GetCityByPK",
+    "RelativePath": "api/City/{CityID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CityID",
+        "Type": "System.Int32",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -102,7 +118,7 @@
   {
     "ContainingType": "DemoWebAPI.Controllers.CountryController",
     "Method": "DeleteCountry",
-    "RelativePath": "api/Country",
+    "RelativePath": "api/Country/{CountryID}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -110,7 +126,49 @@
       {
         "Name": "CountryID",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoWebAPI.Controllers.CountryController",
+    "Method": "GetCountryByPK",
+    "RelativePath": "api/Country/{CountryID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CountryID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoWebAPI.Controllers.DropDownController",
+    "Method": "GetCountryDropDown",
+    "RelativePath": "api/DropDown/CountryDropDown",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoWebAPI.Controllers.DropDownController",
+    "Method": "GetStateDropDownByCountry",
+    "RelativePath": "api/DropDown/StateDropDown/{CountryID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CountryID",
+        "Type": "System.Int32",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -160,7 +218,7 @@
   {
     "ContainingType": "DemoWebAPI.Controllers.StateController",
     "Method": "DeleteState",
-    "RelativePath": "api/State",
+    "RelativePath": "api/State/{StateID}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -168,7 +226,23 @@
       {
         "Name": "StateID",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoWebAPI.Controllers.StateController",
+    "Method": "GetStateByPK",
+    "RelativePath": "api/State/{StateID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "StateID",
+        "Type": "System.Int32",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

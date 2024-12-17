@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Consume_DemoAPI_FrontEnd.props" />
+</Project>
