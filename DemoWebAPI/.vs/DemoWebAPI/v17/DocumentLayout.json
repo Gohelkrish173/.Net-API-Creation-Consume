@@ -1,12 +1,187 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\College Work\\Advance DotNet\\Lecture\\WebAPI\\DemoWebAPI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2938BF-485D-4379-9CB8-237C174693B2}|DemoWebAPI.csproj|d:\\college work\\advance dotnet\\lecture\\webapi\\demowebapi\\data\\staterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED2938BF-485D-4379-9CB8-237C174693B2}|DemoWebAPI.csproj|solutionrelative:data\\staterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2938BF-485D-4379-9CB8-237C174693B2}|DemoWebAPI.csproj|d:\\college work\\advance dotnet\\lecture\\webapi\\demowebapi\\models\\statemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED2938BF-485D-4379-9CB8-237C174693B2}|DemoWebAPI.csproj|solutionrelative:models\\statemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2938BF-485D-4379-9CB8-237C174693B2}|DemoWebAPI.csproj|d:\\college work\\advance dotnet\\lecture\\webapi\\demowebapi\\validators\\statevalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED2938BF-485D-4379-9CB8-237C174693B2}|DemoWebAPI.csproj|solutionrelative:validators\\statevalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2938BF-485D-4379-9CB8-237C174693B2}|DemoWebAPI.csproj|d:\\college work\\advance dotnet\\lecture\\webapi\\demowebapi\\data\\countryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED2938BF-485D-4379-9CB8-237C174693B2}|DemoWebAPI.csproj|solutionrelative:data\\countryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2938BF-485D-4379-9CB8-237C174693B2}|DemoWebAPI.csproj|d:\\college work\\advance dotnet\\lecture\\webapi\\demowebapi\\models\\countrymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED2938BF-485D-4379-9CB8-237C174693B2}|DemoWebAPI.csproj|solutionrelative:models\\countrymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2938BF-485D-4379-9CB8-237C174693B2}|DemoWebAPI.csproj|d:\\college work\\advance dotnet\\lecture\\webapi\\demowebapi\\data\\cityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED2938BF-485D-4379-9CB8-237C174693B2}|DemoWebAPI.csproj|solutionrelative:data\\cityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2938BF-485D-4379-9CB8-237C174693B2}|DemoWebAPI.csproj|d:\\college work\\advance dotnet\\lecture\\webapi\\demowebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED2938BF-485D-4379-9CB8-237C174693B2}|DemoWebAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2938BF-485D-4379-9CB8-237C174693B2}|DemoWebAPI.csproj|d:\\college work\\advance dotnet\\lecture\\webapi\\demowebapi\\controllers\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED2938BF-485D-4379-9CB8-237C174693B2}|DemoWebAPI.csproj|solutionrelative:controllers\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2938BF-485D-4379-9CB8-237C174693B2}|DemoWebAPI.csproj|d:\\college work\\advance dotnet\\lecture\\webapi\\demowebapi\\controllers\\dropdowncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED2938BF-485D-4379-9CB8-237C174693B2}|DemoWebAPI.csproj|solutionrelative:controllers\\dropdowncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2938BF-485D-4379-9CB8-237C174693B2}|DemoWebAPI.csproj|d:\\college work\\advance dotnet\\lecture\\webapi\\demowebapi\\data\\dropdownrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED2938BF-485D-4379-9CB8-237C174693B2}|DemoWebAPI.csproj|solutionrelative:data\\dropdownrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StateRepository.cs",
+              "DocumentMoniker": "D:\\College Work\\Advance DotNet\\Lecture\\WebAPI\\DemoWebAPI\\Data\\StateRepository.cs",
+              "RelativeDocumentMoniker": "Data\\StateRepository.cs",
+              "ToolTip": "D:\\College Work\\Advance DotNet\\Lecture\\WebAPI\\DemoWebAPI\\Data\\StateRepository.cs",
+              "RelativeToolTip": "Data\\StateRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T16:52:50.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CountryRepository.cs",
+              "DocumentMoniker": "D:\\College Work\\Advance DotNet\\Lecture\\WebAPI\\DemoWebAPI\\Data\\CountryRepository.cs",
+              "RelativeDocumentMoniker": "Data\\CountryRepository.cs",
+              "ToolTip": "D:\\College Work\\Advance DotNet\\Lecture\\WebAPI\\DemoWebAPI\\Data\\CountryRepository.cs",
+              "RelativeToolTip": "Data\\CountryRepository.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCEAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T16:50:22.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CountryModel.cs",
+              "DocumentMoniker": "D:\\College Work\\Advance DotNet\\Lecture\\WebAPI\\DemoWebAPI\\Models\\CountryModel.cs",
+              "RelativeDocumentMoniker": "Models\\CountryModel.cs",
+              "ToolTip": "D:\\College Work\\Advance DotNet\\Lecture\\WebAPI\\DemoWebAPI\\Models\\CountryModel.cs",
+              "RelativeToolTip": "Models\\CountryModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T16:49:32.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StateModel.cs",
+              "DocumentMoniker": "D:\\College Work\\Advance DotNet\\Lecture\\WebAPI\\DemoWebAPI\\Models\\StateModel.cs",
+              "RelativeDocumentMoniker": "Models\\StateModel.cs",
+              "ToolTip": "D:\\College Work\\Advance DotNet\\Lecture\\WebAPI\\DemoWebAPI\\Models\\StateModel.cs",
+              "RelativeToolTip": "Models\\StateModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T16:49:21.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\College Work\\Advance DotNet\\Lecture\\WebAPI\\DemoWebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\College Work\\Advance DotNet\\Lecture\\WebAPI\\DemoWebAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T15:15:42.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CityController.cs",
+              "DocumentMoniker": "D:\\College Work\\Advance DotNet\\Lecture\\WebAPI\\DemoWebAPI\\Controllers\\CityController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CityController.cs",
+              "ToolTip": "D:\\College Work\\Advance DotNet\\Lecture\\WebAPI\\DemoWebAPI\\Controllers\\CityController.cs",
+              "RelativeToolTip": "Controllers\\CityController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T03:34:09.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CityRepository.cs",
+              "DocumentMoniker": "D:\\College Work\\Advance DotNet\\Lecture\\WebAPI\\DemoWebAPI\\Data\\CityRepository.cs",
+              "RelativeDocumentMoniker": "Data\\CityRepository.cs",
+              "ToolTip": "D:\\College Work\\Advance DotNet\\Lecture\\WebAPI\\DemoWebAPI\\Data\\CityRepository.cs",
+              "RelativeToolTip": "Data\\CityRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T03:26:37.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StateValidation.cs",
+              "DocumentMoniker": "D:\\College Work\\Advance DotNet\\Lecture\\WebAPI\\DemoWebAPI\\Validators\\StateValidation.cs",
+              "RelativeDocumentMoniker": "Validators\\StateValidation.cs",
+              "ToolTip": "D:\\College Work\\Advance DotNet\\Lecture\\WebAPI\\DemoWebAPI\\Validators\\StateValidation.cs",
+              "RelativeToolTip": "Validators\\StateValidation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T03:23:08.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DropDownRepository.cs",
+              "DocumentMoniker": "D:\\College Work\\Advance DotNet\\Lecture\\WebAPI\\DemoWebAPI\\Data\\DropDownRepository.cs",
+              "RelativeDocumentMoniker": "Data\\DropDownRepository.cs",
+              "ToolTip": "D:\\College Work\\Advance DotNet\\Lecture\\WebAPI\\DemoWebAPI\\Data\\DropDownRepository.cs",
+              "RelativeToolTip": "Data\\DropDownRepository.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T03:09:41.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DropDownController.cs",
+              "DocumentMoniker": "D:\\College Work\\Advance DotNet\\Lecture\\WebAPI\\DemoWebAPI\\Controllers\\DropDownController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DropDownController.cs",
+              "ToolTip": "D:\\College Work\\Advance DotNet\\Lecture\\WebAPI\\DemoWebAPI\\Controllers\\DropDownController.cs",
+              "RelativeToolTip": "Controllers\\DropDownController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAwwBwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T03:09:25.918Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
