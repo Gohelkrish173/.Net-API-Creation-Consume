@@ -11,7 +11,7 @@ namespace Consume_DemoAPI_FrontEnd.Controllers
     {
         private readonly IConfiguration _configuration;
         private readonly HttpClient _httpClient;
-        Uri baseAddress = new Uri("http://localhost:5223/api");
+        Uri baseAddress = new Uri("http://localhost:5000/api");
 
         public CityController()
         {

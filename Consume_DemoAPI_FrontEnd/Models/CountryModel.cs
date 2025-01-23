@@ -5,6 +5,7 @@
         public int CountryID { get; set; }
         public string CountryName { get; set; }
     
-        public string CountryCode {  get; set; } 
+        public string CountryCode {  get; set; }
+        public int StateCount { get; set; }
     }
 }

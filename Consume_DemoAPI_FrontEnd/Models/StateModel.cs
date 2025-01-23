@@ -7,5 +7,7 @@
 
         public string StateCode { get; set; }
         public int CountryID { get; set; }
+    
+        public int CityCount { get; set; }
     }
 }

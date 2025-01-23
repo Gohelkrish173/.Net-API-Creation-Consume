@@ -32,7 +32,8 @@ namespace DemoWebAPI.Data
                     {
                         CountryID = Convert.ToInt32(reader["CountryID"]),
                         CountryName = reader["CountryID"].ToString(),
-                        CountryCode = reader["CountryCode"].ToString()
+                        CountryCode = reader["CountryCode"].ToString(),
+                        StateCount = Convert.ToInt32(reader["StateCount"])
                     });
                 }
                 return countries;
